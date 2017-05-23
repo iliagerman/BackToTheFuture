@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Back To The Future
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label>Ready to travel?</ion-label>
+  <button ion-button (click)="travel()">Let's go doc!</button>
+  <ion-label *ngIf="randomYear">Going to: {{randomYear | yearappender}}</ion-label>
+</ion-content>
